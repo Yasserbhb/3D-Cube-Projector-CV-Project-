@@ -1,0 +1,45 @@
+google drive to large test video that surpassed the 5Mo and it's output after the execution of main.py :
+https://drive.google.com/file/d/1qGRb8BAlC41i-LZpksoz-8guBA9KREjG/view?usp=sharing
+
+
+TESTING INSTRUCTIONS
+
+To test a new video (test_video_large.mp4) that we uploaded in drive, follow these steps. Alternatively, you can run the code directly to test test_video_small.mp4 again.
+
+1-Prepare the New Video
+Location: Ensure that test_video_large.mp4 is placed in the local folder alongside the other scripts.
+
+2-Update the Input File in main.py
+File to Edit: main.py
+video_path = "test_video_large.mp4"  # Line 28
+
+
+3-Execute the Script main.py
+
+4-Expected Output:
+An updated output.mp4 will be generated after processing and it will appear in the folder.
+        Execution Time:
+            Approximately 15 seconds for 100 frames of test_video_small.mp4.
+            Approximately 55 seconds for 360 frames of test_video_large.mp4.
+
+
+
+
+
+Method Tierces
+
+When you run the script main_tierces.py, it:
+
+1. Uses test1.mp4 to detect checkerboard corners and automatically compute the camera intrinsic matrix K.
+
+2. Generates an output video using the same 3D projection method, saving the result as output_tierces.mp4.
+
+PS!!!!! : If you use the test video large.mp4 downloaded by the above lien, please consider to update the input file in main_tierces.py
+
+File to Edit: main tierces.py
+video_path = "test_video_large.mp4"  # Line 85
+
+
+Please ensure all files are in the same folder before running the script. This demonstrates how the automatic calibration (Method Tierces) can estimate K directly from a video and apply the same overlay procedure as the manual approach.
+
+
