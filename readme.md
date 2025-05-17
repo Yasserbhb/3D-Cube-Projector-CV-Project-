@@ -11,7 +11,7 @@ This project demonstrates the implementation of projective geometry techniques t
 3. Calculates the projection matrix using camera intrinsic parameters
 4. Renders a 3D cube correctly positioned on the detected grid
 
-![Example of projected cube](https://github.com/yourusername/3D-Cube-Projector/raw/main/images/cube_example.png)
+
 
 ## Requirements
 
